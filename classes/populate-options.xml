@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Page_Layout</target>
+        <target>lightningCommunity__Theme_Layout</target>
+    </targets>
+    <targetConfigs>
+            <property
+        name="objApiName"
+        type="String"
+        placeholder="Ex: Account"
+        required="true"
+        datasource="apex://ObjPicklist"
+        label="Object API name"
+        description="Enter the object API name. Ex: Account"
+      />
+            <property
+        name="fieldSetApiName"
+        type="String"
+        placeholder="Ex: sbqq__lineeditor"
+        required="true"
+        datasource="apex://FieldSetPicklist"
+        label="Child object Field Set name"
+        description="Enter the Field Set API Name"
+      />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
